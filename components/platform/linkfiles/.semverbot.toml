@@ -1,0 +1,23 @@
+mode = "git-branch"
+
+[git]
+
+[git.config]
+email = "semverbot@github.com"
+name = "semverbot"
+
+[git.tags]
+prefix = ""
+
+[semver]
+patch = ["fix", "bug"]
+minor = ["feature"]
+major = ["release"]
+
+[modes]
+
+[modes.git-branch]
+delimiters = "/"
+
+[modes.git-commit]
+delimiters = "[]"
